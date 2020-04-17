@@ -54,7 +54,7 @@ TypeScript definitions. Notice that we didn't need to install Apollo's types lib
 a more convenient way to work with a GraphQL schema. The exported result should be a simple string that we can use to compose our GraphQL schema. The clear advantage of working with a dedicated file is that we get to have syntax highlight.
 
 ### resolvers
-Now we will implement the resolvers. Resolvers functions, presented in a JSON object, that correspond to each field in the GraphQL schema. <b>Each resolver name should match the field name it represents.</b> It will accept as a parameter the parent resolver value (we'll explain that process in a second), can run any logic, like calling a server, and returns a value that correspond to the type it has in the schema
+Resolvers functions, presented in a JSON object, that correspond to each field in the GraphQL schema. <b>Each resolver name should match the field name it represents.</b> It will accept as a parameter the parent resolver value (we'll explain that process in a second), can run any logic, like calling a server, and returns a value that correspond to the type it has in the schema
 
 ### graphql-scalars
 Note that we've implemented a custom scalar named Date and URL but we will need an implementation for it. We will use graphql-scalars that has many custom scalars ready-to-use.
